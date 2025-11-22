@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.app-container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    border:8px solid #faf8d8;
+}
+
+h1 {
+    color: #c5904a;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: inset 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #c5904a;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b47f3b;
+}
+
+#bookmark-list {
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+
+#bookmark-list li {
+    list-style: none;
+    border: 2px solid #e0e0e0;
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+#bookmark-list li:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+#bookmark-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 550;
+    padding: 5px;
+}
+
+#bookmark-list button {
+    color: #666;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background: none;
+    transition: color 0.3s, background-color 0.3s ease;
+}
+
+#bookmark-list button:hover {
+    background-color: #ffdede;
+    color: rgb(184, 0, 0);
+}
