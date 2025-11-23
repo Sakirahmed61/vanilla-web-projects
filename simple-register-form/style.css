@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #f9f9f9;
+    box-shadow: inset 4px 4px 3px rgba(255,255,255,1), 1px 5px 8px rgba(0,0,0,0.1);
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+    color:darkviolet;
+    font-weight: 400;
+}
+
+.form-group {
+    width: 100%;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 100%;
+    display: block;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s border-color 0.3s ease;
+}
+
+input:hover {
+    background-color: #f8f8f8;
+}
+
+small {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    font-size: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 8px 0px;
+    border: none;
+    background-color: darkviolet;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(113, 0, 161);
+}
+
+.form-group.error input {
+    border-color: #e74c3c;
+}
+
+.form-group.success input {
+    border-color: #2ecc60;
+}
+
+.form-group.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
