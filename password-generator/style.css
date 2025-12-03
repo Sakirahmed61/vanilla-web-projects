@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+    --primary-color: #2b5876;
+    --secondary-color: #4e4376;
+    --weak-color: #fc8181;
+    --medium-color: #fbd38d;
+    --strong-color: #68d391;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, var(--primary-color),var(--secondary-color));
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #eee;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+h1::after {
+    content: "";
+    background:linear-gradient(45deg, var(--primary-color),var(--secondary-color));
+    height: 4px;
+    border-radius: 2px;
+    display: block;
+    width: 50%;
+    transform: translateX(50%);
+    margin-top: 10px; 
+}
+
+.password-container {
+    margin-bottom: 2rem;
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+.password-container input {
+    border: none;
+    width: 100%;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3e3e3e;
+    letter-spacing: 1px;
+    overflow: hidden;
+    padding: 10px;
+    background: none;
+    cursor: auto;
+}
+
+#copy-btn {
+    color: #5e6e5e;
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    transition: color 0.3s, background-color 0.3s ease;
+}
+
+#copy-btn:hover {
+    color: #444;
+    background-color: #dbdbdb;
+}
+
+.options {
+    background-color: #e3e6e8;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.option:last-child {
+    margin-bottom: 0px;
+}
+
+.option label{
+    font-size: 0.9rem;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.range-container {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    gap: 10px;
+}
+
+input {
+    cursor: pointer;
+}
+
+input[type="range"] {
+    accent-color: var(--primary-color);
+    height: 5px;
+    flex: 1;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    appearance: none;
+    border: 2px solid var(--primary-color);
+    transition: all 0.2s ease;
+    position: relative;
+    margin-right: 0.3rem;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+}
+
+input[type="checkbox"]:checked::after {
+    content: "\2714";
+    color: white;   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12px;
+}
+
+#length-value {
+    font-weight: 600;
+    color: var(--primary-color);
+    width: 30px;
+    text-align: center;
+    background: #cccccc;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(90deg,var(--primary-color),var(--secondary-color));
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    
+}
+
+
+button:active {
+    transform: translateY(0);
+}
+
+.strength-container {
+    margin-top: 0.8rem;
+}
+
+.strength-container p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+.strength-meter {
+    width: 100%;
+    display: block;
+    height: 8px;
+    margin-top: 0.8rem;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.strength-bar {
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    min-width: 5px;
+    transition: all 0.5s;
+}
+
