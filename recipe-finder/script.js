@@ -14,16 +14,16 @@ const LOOKUP_URL = `${BASE_URL}lookup.php?i=`;
 // Adding most important eventlisteners.
 searchBtn.addEventListener("click", () => {
   searchMeals()
-  mealDetails.classList.add("hidden");
 })
 
 mealsContainer.addEventListener("click", handleMealClick)
 
-backBtn.addEventListener("click", () => mealDetails.classList.add("hidden"))
+backBtn.addEventListener("click", () => {
+  mealDetails.classList.remove("active");
+})
 
 searchInput.addEventListener("keypress",(e) => {
   if(e.key === "Enter") searchMeals();
-  mealDetails.classList.add("hidden");
 })
 
 
@@ -140,9 +140,9 @@ async function handleMealClick(e) {
               <i class="fab fa-youtube"></i> Watch Video
             </a>` : ""}
       `; // end of mealContainer innerHTML
-
-      mealDetails.classList.remove("hidden")
-      mealDetails.scrollIntoView({ behavior: "smooth" });
+      
+      mealDetails.classList.add("active")
+      
     }
     
   } catch (error) {

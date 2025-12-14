@@ -153,8 +153,20 @@ button:hover {
   background-color: var(--background);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  max-width: 500px;
+  overflow-y: scroll;
   padding: 1.5rem;
-  margin: 2rem 0;
+  transition: all 0.2s;
+  transform: translateX(100%);
+}
+
+#meal-details.active {
+  transform: translateX(0%);
 }
 
 #back-btn {
@@ -178,7 +190,7 @@ button:hover {
 
 .meal-details-img {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   border-radius: var(--border-radius);
   margin-bottom: 1.5rem;
 }
@@ -222,7 +234,7 @@ button:hover {
 
 .ingredients-list li {
   display: flex;
-  align-items: center;
+  align-items: flex;
   padding: 6px 10px;
   background-color: var(--background-light);
   border-radius: var(--border-radius);
