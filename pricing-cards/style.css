@@ -7,9 +7,9 @@
 
 
 :root {
-    --primary-color: #4ade80;
-    --primary-dark: #22c55e;
-    --primary-light: #86efac;
+    --primary-color: #db4a9a;
+    --primary-dark: #c81778;
+    --primary-light: #e181b6;
     --bg-dark: #1a1a1a;
     --text-light: #f3f4f6;
     --text-gray: #9ca3af;
@@ -92,7 +92,7 @@ header p {
 .plan-icon {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.2), rgba(74, 222, 128, 0.05));
+  background: linear-gradient(135deg, rgba(222, 74, 190, 0.2), rgba(222, 74, 136, 0.05));
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -193,7 +193,7 @@ h3 {
 
 .btn:hover {
   border-color: var(--primary-color);
-  background-color: rgba(74, 222, 128, 0.1);
+  background-color: rgba(222, 74, 158, 0.1);
 }
 
 .btn-accent {
