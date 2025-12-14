@@ -29,6 +29,7 @@ searchInput.addEventListener("keypress",(e) => {
 
 async function searchMeals() {
   /*This function serves as the main function that returns the search results using the API and gives errors if nothing happens*/
+  mealDetails.classList.remove("active"); //UI reset.
   const searchTerm = searchInput.value.trim() // search term
 
   // if user makes a blank search
